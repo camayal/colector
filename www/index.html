@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <!--
+        Personalice la directiva de seguridad de contenido en la etiqueta meta como sea necesario. Agregue "unsafe-inline" a default-src para permitir JavaScript insertado.
+        Para obtener m�s detalles, consulte http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src *">
+
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>ColectoR</title>
+</head>
+<body>
+
+
+
+
+
+    <div id="main_screen_Container" class="slider">
+
+
+
+        <div id="trHeadButtons">
+            <button class="Button noTabledButton" id="toReviewScreen">
+                <div id="headButtonsLeft"><img class="imageButton" src="images/review.png" /></div>
+            </button>
+            <div id="headButtonsRight">
+                <button id="toExportScreen">
+                    <img class="imageButton" src="images/cloud.png" />
+                </button>
+                <button id="toConfigScreen">
+                    <img class="imageButton" src="images/config.png" />
+                </button>
+            </div>
+        </div>
+        <div id="trNuevoButton">
+            <button class="ButtonX5" id="newEntry">
+                <img class="imageButtonX5" src="images/nuevo.png" />
+            </button>
+        </div>
+        <div id="trFooter">
+            Carlos Alonso Maya-Lastra - 2014-2019
+        </div>
+    </div>
+
+
+    <div id="registration_screen_Container" class="slider closed">
+        <table id="registration_screen">
+            <tr>
+                <td class="oLeft">
+                    <button class="Button" id="LockUnlock">
+                        <img class="imageButton" id="Unlock" src="images/unlock.png" />
+                        <img class="imageButton" id="Lock" src="images/lock.png" />
+                    </button>
+                    <button id="backInRegisgrationScreen">
+                        <img class="imageButton" src="images/atras.png" />
+                    </button>
+                </td>
+                <td class="sHead">
+                    <button class="Button" id="toPhotos">
+                        <img class="imageButton" id="folderPhoto" src="images/folderPhotos.png" />
+                        <img class="imageButton" id="waitfolderPhotoImg" src="images/wait.gif" />
+
+                    </button>
+                </td>
+                <td class="tRight">
+                    <button class="Button" id="cameraTakePicture">
+                        <img class="imageButton" id="cameraPic" src="images/camara.png" />
+                    </button>
+                </td>
+            </tr>
+            <!--Date-->
+            <tr>
+                <td class="o"><label for="Date">Date</label></td>
+                <td class="s"><input type="date" id="Date" value=""></td>
+                <td class="t"></td>
+            </tr>
+            <!--Collector-->
+            <tr>
+                <td class="o"><label for="Collector">Collector</label></td>
+                <td class="s"><input type="text" list="Listcollector" id="Collector" value=""><datalist id="Listcollector"></datalist></td>
+                <td class="t"></td>
+            </tr>
+            <!--Number-->
+            <tr>
+                <td class="o"><label for="Number">Number</label></td>
+                <td class="s"><input type="text" id="Number" value=""></td>
+                <td class="t"></td>
+            </tr>
+            <!--Et_al-->
+            <tr>
+                <td class="o"><em><label for="Et_al">Et al.</label></em></td>
+                <td class="s"><input type="text" id="Et_al" value=""></td>
+                <td class="t"></td>
+            </tr>
+            <!--Species-->
+            <tr>
+                <td class="o"><label for="Species">Species</label></td>
+                <td class="s"><em><input type="text" list="Listspecies" id="Species" value=""></em><datalist id="Listspecies"></datalist></td>
+                <td class="t">
+                    <button class="Button" id="searchSpecies">
+                        <img class="imageButton" id="searchSpeciesImg" src="images/buscar.png" />
+                        <img class="imageButton" id="waitsearchSpeciesImg" src="images/wait.gif" />
+
+                    </button>
+                </td>
+            </tr>
+            <!--Author-->
+            <tr>
+                <td class="o"><label for="Author">Author</label></td>
+                <td class="s"><input type="text" id="Author" value=""></td>
+                <td class="t"></td>
+            </tr>
+            <!--Family-->
+            <tr>
+                <td class="o"><label for="Family">Family</label></td>
+                <td class="s"><input type="text" list="Listfamily" id="Family" value=""><datalist id="Listfamily"></datalist></td>
+                <td class="t"></td>
+            </tr>
+            <!--Description-->
+            <tr>
+                <td class="o"><label for="Description">Description</label></td>
+                <td class="s"><textarea id="Description"></textarea></td>
+                <td class="t">
+                    <button class="Button speechRecBtn" id="speechDescription">
+                        <img class="imageButton" id="speechDescriptionImg" src="images/record.png" />
+                    </button>
+                </td>
+            </tr>
+            <!--Latitude-->
+            <tr>
+                <td class="o"><label for="Latitude">Latitude</label></td>
+                <td class="s"><input class="gpsInputs" type="number" id="Latitude" value=""></td>
+                <td class="t">
+                    <button class="Button" id="getPosition">
+                        <img class="imageButton" id="gpsImgButton" src="images/gps.png" />
+                        <img class="imageButton" id="WaitgpsImgButton" src="images/wait.gif" />
+                    </button>
+                </td>
+            </tr>
+            <!--Longitude-->
+            <tr>
+                <td class="o"><label for="Longitude">Longitude</label></td>
+                <td class="s"><input class="gpsInputs" type="number" id="Longitude" value=""></td>
+                <td class="t"><p class="small" id="Accuracy"></p></td>
+            </tr>
+            <!--Altitude-->
+            <tr>
+                <td class="o"><label for="Altitude">Altitude</label></td>
+                <td class="s"><input class="gpsInputs" type="number" id="Altitude" value=""></td>
+                <td class="t"><p class="small" id="AltitudeAccuracy"></p></td>
+            </tr>
+            <!--Country-->
+            <tr>
+                <td class="o"><label for="Country">Country</label></td>
+                <td class="s"><input class="" type="text" list="Listcountry" id="Country" value=""><datalist id="Listcountry"></datalist></td>
+                <td class="t">
+                    <button class="Button" id="searchLocation">
+                        <img class="imageButton" id="searchLocationImg" src="images/buscar.png" />
+                        <img class="imageButton" id="waitsearchLocationImg" src="images/wait.gif" />
+
+                    </button>
+                </td>
+            </tr>
+            <!--State-->
+            <tr>
+                <td class="o"><label for="State">State</label></td>
+                <td class="s"><input class="" type="text" list="Liststate" id="State" value=""><datalist id="Liststate"></datalist></td>
+                <td class="t"></td>
+            </tr>
+            <!--Locality-->
+            <tr>
+                <td class="o"><label for="Locality">Locality</label></td>
+                <td class="s"><textarea class="" id="Locality"></textarea></td>
+                <td class="t"></td>
+            </tr>
+            <!--Notes-->
+            <tr>
+                <td class="o"><label for="Notes">Notes</label></td>
+                <td class="s"><textarea id="Notes"></textarea></td>
+                <td class="t">
+                    <button class="Button speechRecBtn" id="speechNotes">
+                        <img class="imageButton" id="speechNotesImg" src="images/record.png" />
+                    </button>
+                </td>
+            </tr>
+            <!--Additional notes-->
+            <tr>
+                <td class="o"><label for="Additional_notes">Additional notes</label></td>
+                <td class="s"><textarea id="Additional_notes"></textarea></td>
+                <td class="t">
+                    <button class="Button speechRecBtn" id="speechAdditional_notes">
+                        <img class="imageButton" id="speechAdditional_notesImg" src="images/record.png" />
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+
+        <table id="saveControls">
+            <tr>
+                <td>
+                    <button class="ButtonX2" id="saveEntry">
+                        <img class="imageButtonX2" id="saveImgButton" src="images/save.png" />
+                        <img class="imageButtonX2" id="backInEditImgButton" src="images/atras.png" />
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+        <!--
+        <table id="PhotoPreview">
+            <tr>
+                <td>
+                    <button id="cameraTakePicture">TAKE PICTURE</button>
+                    <img id="myImage" />
+                </td>
+            </tr>
+        </table>
+            -->
+    </div>
+
+
+    <div id="review_screen_Container" class="slider closed">
+        <div id="SearchInPreviewScreen_Container">
+            <button class="Button noTabledButton" id="toMainScreen">
+                <img class="imageButton" src="images/atras.png" />
+            </button><input type="text" id="SearchInPreviewScreen" placeholder="Search...">
+        </div>
+        <div id="review_table_Container">
+            <span class="hidden" id="no_entries_to_show">No entries to show, to start go back and add an entry with the Plus button in the main screen</span>
+            <table id="review_table"></table>
+        </div>
+    </div>
+
+
+    <div id="config_screen_Container" class="slider closed">
+        <div id="backinConfig_Container">
+            <button class="Button noTabledButton" id="backinConfig_Button">
+                <img class="imageButton" src="images/atras.png" />
+            </button>
+        </div>
+        <div id="config_table_Container">
+            <table id="config_table">
+
+                <tr class="oConfig">
+                    <td class="ConfigfirstCol">Start GPS searching when enter in Registration screen</td>
+                    <td class="ConfigsecondCol"><input type='checkbox' id="autoGPS" /><label for="autoGPS"></label> </td>
+                </tr>
+                <tr class="oConfig">
+                    <td class="ConfigfirstCol">Automatic location search after getting GPS info</td>
+                    <td class="ConfigsecondCol"><input type='checkbox' id="autoLocation" /><label for="autoLocation"></label> </td>
+                </tr>
+                <tr class="oConfig">
+                    <td class="ConfigfirstCol">Timeout for your GPS (if you have timeout error, increase the time in seconds)</td>
+                    <td class="ConfigsecondCol"><input type="number" min="10" max="60" id="timeoutGPS" value=""></td>
+                </tr>
+                <tr class="oConfig">
+                    <td class="ConfigfirstCol">Use experimental gallery</td>
+                    <td class="ConfigsecondCol"><input type='checkbox' id="experimentalGallery" /><label for="experimentalGallery"></label> </td>
+                </tr>
+
+                <tr class="oConfig">
+                    <td class="ConfigfirstCol">Delete the entire database</td>
+                    <td class="ConfigsecondCol"><button id="deleteDatabase"><img class="imageButton" src="images/delete.png" /></button></td>
+                </tr>
+                <tr class="oConfig">
+                    <td class="ConfigfirstCol">Delete the photos folder</td>
+                    <td class="ConfigsecondCol"><button id="deletePhotoFolder"><img class="imageButton" src="images/delete.png" /></button></td>
+                </tr>
+                <tr class="oConfig">
+                    <td class="ConfigfirstCol">A security log backup (all details, new, updated and deleted entries) is saved in: <span id="backupPath"></span></td>
+                    <td class="ConfigsecondCol">
+                        <button class="" id="exportSecurityBackup">
+                            <img class="imageButton" src="images/share.png" />
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+    </div>
+
+
+    <div id="export_screen_Container" class="slider closed">
+        <div id="backinExport_Container">
+            <button class="Button noTabledButton" id="backinExport_Button">
+                <img class="imageButton" src="images/atras.png" />
+            </button>
+        </div>
+
+        <div id="text_exportScreen">
+            <p>The database and photos will be exported as CSV or ZIP file respectively.</p>
+            <p>To continue press the correspondent button to export the desire collection and follow select an App, for example, Dropbox, Whatsapp or Gmail</p>
+            <br />
+
+            <table>
+                <tr>
+                    <th>Database</th>
+                    <th>Photos</th>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div id="exportButton_container">
+                            <button class="ButtonX2" id="exportButton">
+                                <img class="imageButtonX2" id="exportImgButton" src="images/mainDB.png" />
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="exportPhotoButton_container">
+                            <button class="ButtonX2" id="exportPhotoButton">
+                                <img class="imageButtonX2" id="exportPhotoImgButton" src="images/photoDB.png" />
+                                <img class="imageButtonX2" id="waitexportPhotoImgButton" src="images/wait.gif" />
+                            </button>
+                        </div>
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+            <br />
+            <div id="infoExport"></div>
+        </div>
+    </div>
+
+    <div id="towns_pseudoscreen_Container" class="slider closed">
+        <div id="backbutton_towns_pseudoscreen">
+            <button class="Button noTabledButton" id="toRegistrationScreen_from_towns_pseudoscreen">
+                <img class="imageButton" src="images/atras.png" />
+            </button><span id="legendofTowns">Select a town to calculate the distance by road</span>
+        </div>
+        <div id="towns_pseudoscreen_table_Container">
+            <table id="towns_pseudoscreen_table"></table>
+        </div>
+    </div>
+
+
+    <div id="photos_pseudoscreen_Container" class="slider closed">
+        <div id="backbutton_photos_pseudoscreen">
+            <button class="Button noTabledButton" id="toRegistrationScreen_from_photos_pseudoscreen">
+                <img class="imageButton" src="images/atras.png" />
+            </button><span id="legendofPhotos"></span>
+        </div>
+        <div id="photos_pseudoscreen_div_Container">
+            <table id="photos_pseudoscreen_table"></table>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

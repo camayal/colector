@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "ColectoR",
+  "short_name": "ColectoR",
+  "version": "info.camayal.colector",
+  "description": "ColectoR is a free assistant for botanist field trips, to help to manage big amounts of data from each specimen collected using any Android smartphone based. ColectoR contain the most used fields by botanist in the label for their collections. This application use sensors in each smartphone like GPS, altimeter and camera, allowing integrate this information with each registry. Also, it presents functions to avoid enter repetitive data like main collector, additional collector, country and others, suggesting automatically in each entry. Auto-increment the number of collector and suggest morphological descriptions based on the previews registries entered. Use various APIs of inverse geocoding to suggest names of locations, roads and others and an approximate distance from near towns or cities, perfect to collect on road trips. ColectoR, use the cellphone communication and it can connect directly with iPlant CollaborativeTM servers to verify and suggest species names, authors and families. This app present an interface to make easy the exportation of data to use directly in Excel or other similar that permit using any database manager or the Label printer for ColectoR spreadsheet designed for this.",
+  "author": "Carlos Alonso Maya Lastra",
+  "icons": [],
+  "start_url": "index.html"
+}

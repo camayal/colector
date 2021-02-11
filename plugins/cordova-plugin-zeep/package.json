@@ -1,0 +1,62 @@
+{
+  "_from": "cordova-plugin-zeep",
+  "_id": "cordova-plugin-zeep@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-9/2dhy4jmqLOU4o+4fgP2/0VCm8=",
+  "_location": "/cordova-plugin-zeep",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-zeep",
+    "name": "cordova-plugin-zeep",
+    "escapedName": "cordova-plugin-zeep",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-zeep/-/cordova-plugin-zeep-0.0.4.tgz",
+  "_shasum": "f7fd9d872e239aa2ce538a3ee1f80fdbfd150a6f",
+  "_spec": "cordova-plugin-zeep",
+  "_where": "C:\\CAML\\VisualStudio\\pureCordovaColectoR",
+  "author": {
+    "name": "Fortune Ngwenya"
+  },
+  "bugs": {
+    "url": "https://github.com/FortuneN/cordova-plugin-zeep/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-zeep",
+    "platforms": [
+      "ios",
+      "android",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Zip compression/decompression for the cordova/phonegap platform",
+  "homepage": "https://github.com/FortuneN/cordova-plugin-zeep#readme",
+  "keywords": [
+    "cordova",
+    "zeep",
+    "zip",
+    "unzip",
+    "FiNe",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-zeep",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FortuneN/cordova-plugin-zeep.git"
+  },
+  "version": "0.0.4"
+}

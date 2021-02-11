@@ -1,0 +1,496 @@
+/*GENERAL CSS*/
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+	background-color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-size:5vw;
+
+    height:auto;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    width:100vw;
+
+    -ms-overflow-style: none
+
+}
+
+::-webkit-scrollbar { width: 0 !important }
+
+
+
+
+/*END GENERAL CSS*/
+
+/*TABLES DIVS AND OTHER LAYOUT ORGANIZATION*/
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    width: 100vw;
+    text-align:center;
+    margin-top:4px;
+    margin-top:1vw;
+ }
+
+#review_table{
+    text-align:left;
+}
+
+#main_screen_Container {
+    margin-top: 8px;
+    margin-top: 2vw;
+}
+
+
+.o, .oLeft {
+    width:25%;
+    width: 25vw;
+    text-align:right;
+    padding-right: 8px;
+    padding-right: 2vw;
+    padding-top:12px;
+    padding-top:3vw;
+    font-weight: bold;
+    vertical-align:top;
+}
+
+.s {
+    width: 52%;
+    width: 52vw;
+    text-align: center;
+}
+
+.sHead {
+    width: 52%;
+    width: 52vw;
+    text-align: right;
+}
+
+.t {
+    width: 18%;
+    width: 18vw;
+    text-align:center;
+
+    
+}
+
+
+.oLeft {
+    text-align:left;
+    padding-left:8px;
+    padding-left: 2vw;
+    padding-top:0;
+}
+
+.oReview {
+    border-bottom:solid 0.1rem #ccc;
+    border-bottom:solid 0.5vw #ccc;
+    padding: 8px;
+    padding: 2vw;
+}
+
+.firstColReview{
+    width: 55%;
+    width: 55vw;
+}
+
+.secondColReview {
+    text-align:right;
+    width: 15%;
+    width: 15vw;
+}
+
+
+.thridColReview {
+    width: 15%;
+    width: 15vw;
+}
+
+.oConfig{
+    border-bottom:solid 0.1rem #ccc;
+    border-bottom:solid 0.5vw #ccc;
+    
+}
+
+.ConfigfirstCol, .TownsfirstCol{
+        text-align:left;
+    width: 80%;
+    width: 80vw;
+    padding-left: 8px;
+    padding-left: 2vw;
+    height: 20vw;
+    vertical-align:middle;
+
+}
+
+.TownsfirstCol{
+        height: 12.5vw;
+}
+
+.thumbsPhotos{
+    width: 90%;
+    width: 90vw;
+    border-radius: 4px;  /* Rounded border */
+
+}
+
+.ConfigsecondCol{
+        text-align:right;
+    width: 15%;
+    width: 15vw;
+    padding-right: 8px;
+    padding-right: 2vw;
+        height: 20vw;
+vertical-align:middle;
+}
+
+
+.small{
+    font-size:10px;
+    font-size:2.5vw;
+    color:red;
+}
+
+/*
+tr{
+    height: 12vw;
+}
+
+*/
+
+#headButtonsLeft{
+    Float: left;
+    display:block;
+
+}
+
+#headButtonsRight{
+
+    Float: right;
+    display:block;
+    padding-right: 8px;
+    padding-right: 2vw;
+}
+
+
+#text_exportScreen{
+    margin:8px;
+    margin:2vw;
+    text-align:center;
+}
+
+#exportButton_container{
+    text-align:center;
+}
+
+
+
+/* END TABLES DIVS AND OTHER LAYOUT ORGANIZATION*/
+
+/* ELEMENTS CSS, INPUTS, BUTTONS, IMAGES, TEXTAREAS*/
+
+input, textarea {
+    font-size:20px;
+    font-size:5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 6px;
+    padding: 1.5vw;
+    margin: 2px 0 2px 0;
+    margin: 0.5vw 0 0.5vw 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 0.9vw;
+    box-sizing: border-box;
+    height: 50px;
+    height: 12.5vw;
+    outline-color: #000;
+}
+
+#timeoutGPS{
+    width: 50px;
+    width: 12.5vw;
+    text-align: center;
+}
+
+#Date{
+    background-color: transparent;
+    text-align: center;
+    border: 0px;
+    outline:none;
+}
+
+#SearchInPreviewScreen, #legendofTowns, #legendofPhotos{
+    width:80%;
+    width:80vw;
+    margin-left:8px;
+    margin-left:2vw;
+    vertical-align:top;
+    display:inline-block;
+}
+
+#legendofTowns, #legendofPhotos{
+    font-style:italic;
+    text-align:center;
+}
+
+
+
+textarea{    
+    margin: 2px 0 0 0;
+    margin: 0.5vw 0 0 0;
+    height: 120px;
+    height: 30vw;
+    resize: none;
+}
+
+button {
+    cursor:pointer;
+    width: 50px;
+    width: 12.5vw;
+    height: 50px;
+    height: 12.5vw;
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    outline:none;
+    padding: 0px;
+    border-radius: 25px;
+    border-radius: 6.25vw;
+    
+}
+
+.ButtonX2 {
+    width: 100px;
+    width: 25vw;
+    height: 100px;
+    height: 25vw;
+    border-radius: 50px;
+    border-radius: 12.5vw;
+   
+}
+
+
+button:active, .Townsclickable:active{
+  transform: translateY(1vw);
+      -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+}
+
+
+button:disabled, input:disabled, textarea:disabled {
+    background: #dddddd;
+    transform: translateY(0px);
+    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+    color:black;
+}
+
+.noTabledButton{
+    margin-left:8px;
+    margin-left:2vw;
+
+}
+
+ .imageButton {
+     width: 50px;
+     width: 12.5vw;
+     height: 50px;
+     height: 12.5vw;
+}
+
+.imageButtonX2 {
+    width: 100px;
+    width: 25vw;
+    height: 100px;
+    height: 25vw;
+}
+
+
+
+/* END ELEMENTS CSS, INPUTS, BUTTONS, IMAGES, TEXTAREAS*/
+
+  /*SPECIAL FOR MAIN SCREEN PORTRAIT AND LANDSCAPE ORGANIZATION*/
+
+  @media all and (orientation:landscape) {
+
+    #trHeadButtons {
+        height: 10vh;
+        vertical-align: top;
+    }
+
+
+    #review_table_Container,  #config_table_Container, #text_exportScreen, #towns_pseudoscreen_table_Container{
+        height:80vh;
+}
+
+#SearchInPreviewScreen_Container, #backinConfig_Container, #backinExport_Container, #backbutton_towns_pseudoscreen{
+    height:20vh;
+}
+
+    #trNuevoButton {
+
+        display: inline-block;
+        width: 100vw;
+    }
+
+    .imageButtonX5, .ButtonX5 {
+        width: 250px;
+        width: 70vh;
+        height: 250px;
+        height: 70vh;
+        vertical-align: middle;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ButtonX5 {
+        border-radius: 125px;
+        border-radius: 35vh;
+    }
+
+
+    #trFooter {
+display:none;
+    }
+
+}
+
+
+@media all and (orientation:portrait) {
+    #trHeadButtons {
+        height: 10vh;
+        vertical-align: top;
+    }
+
+    #trNuevoButton {
+        height: 80%;
+        height: 80vh;
+        text-align: center;
+        line-height: 80%;
+        line-height: 80vh;
+    }
+
+    #trFooter {
+        height: 8vh;
+        text-align: center;
+    }
+
+
+    #review_table_Container, #config_table_Container, #text_exportScreen, #towns_pseudoscreen_table_Container{
+        height:90vh;
+}
+
+    #SearchInPreviewScreen_Container, #backinConfig_Container, #backinExport_Container, #backbutton_towns_pseudoscreen {
+        height: 10vh;
+
+    }
+
+    .imageButtonX5, .ButtonX5 {
+        width: 250px;
+        width: 80vw;
+        height: 250px;
+        height: 80vw;
+       vertical-align: middle;
+    }
+
+    .ButtonX5 {
+        border-radius: 125px;
+        border-radius: 40vw;
+    }
+}
+
+
+
+  /* END SPECIAL FOR MAIN SCREEN PORTRAIT AND LANDSCAPE ORGANIZATION*/
+
+/*MECHANISMS*/
+
+/*Ghost buttons*/
+#Lock, #WaitgpsImgButton, #backInEditImgButton, #LockUnlock, #waitsearchLocationImg, #waitsearchSpeciesImg, #waitexportPhotoImgButton, #waitfolderPhotoImg, #toPhotos {
+    display: none;
+}
+
+.suggested{
+    color:gold;
+}
+
+#backupPath{
+font-style: italic;
+font-weight:bold;
+font-size:16px;
+font-size:4vw;
+}
+
+
+/*Burde transition*/
+.slider {
+   background-color:white;
+	overflow-y: auto;
+	max-height: 100%; 
+	max-height: 100vh; 
+	transition-property: all;
+	transition-duration: .5s;
+	/*transition-timing-function: cubic-bezier(0, 1, 0.5, 1);*/
+    transition-timing-function:ease;
+
+
+}
+
+
+.slider.closed {
+	max-height: 0;
+
+}
+
+
+
+
+
+/*Custom checkboxes*/
+input[type=checkbox] {
+    display: none;
+}
+
+    input[type=checkbox] + label {
+        background-image: url('../images/uncheck.png');
+        background-size: 12.5vw 12.5vw;
+        height: 12.5vw;
+        width: 12.5vw;
+        display: inline-block;
+        padding: 0 0 0 0px;
+    }
+    input[type=checkbox]:checked + label {
+        background-image: url('../images/check.png');
+        background-size: 12.5vw 12.5vw;
+        height: 12.5vw;
+        width: 12.5vw;
+        display: inline-block;
+        padding: 0 0 0 0px;
+    }
+
+    /*Maintain style to db*/
+    #Family{
+        text-transform:capitalize;
+    }
+
+    .hidden{
+        display:none;
+    }
+
+    #no_entries_to_show{
+        color:darkgray;
+    }
+
+/*END MECHANISMS*/

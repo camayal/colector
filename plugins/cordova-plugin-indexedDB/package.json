@@ -1,0 +1,60 @@
+{
+  "_from": "git+https://github.com/Microsoft/cordova-plugin-indexedDB.git",
+  "_id": "cordova-plugin-indexeddb@0.1.4",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-indexeddb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/Microsoft/cordova-plugin-indexedDB",
+    "rawSpec": "https://github.com/Microsoft/cordova-plugin-indexedDB",
+    "saveSpec": "git+https://github.com/Microsoft/cordova-plugin-indexedDB.git",
+    "fetchSpec": "https://github.com/Microsoft/cordova-plugin-indexedDB.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Microsoft/cordova-plugin-indexedDB.git#56759f24f4c03f8ddf4302f7ebc1d5ef0a0e0dc5",
+  "_spec": "https://github.com/Microsoft/cordova-plugin-indexedDB",
+  "_where": "C:\\CAML\\VisualStudio\\pureCordovaColectoR",
+  "author": {
+    "name": "Microsoft Open Technologies Inc"
+  },
+  "bugs": {
+    "url": "https://github.com/MSOpenTech/cordova-plugin-indexedDB/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-indexeddb",
+    "platforms": [
+      "android",
+      "ios",
+      "windows8",
+      "windows",
+      "browser"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova IndexedDB Plugin",
+  "homepage": "https://github.com/MSOpenTech/cordova-plugin-indexedDB#readme",
+  "keywords": [
+    "cordova",
+    "indexeddb",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-browser"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-indexeddb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSOpenTech/cordova-plugin-indexedDB.git"
+  },
+  "version": "0.1.4"
+}

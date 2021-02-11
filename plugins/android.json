@@ -1,0 +1,47 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "cordova-plugin-indexedDB": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "cordova-plugin-speechrecognizer": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "cordova-plugin-zeep": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "info.camayal.colector"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "cordova-plugin-websql": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "info.camayal.colector"
+    }
+  }
+}

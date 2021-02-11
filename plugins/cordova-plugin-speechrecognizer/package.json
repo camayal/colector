@@ -1,0 +1,61 @@
+{
+  "_from": "git+https://github.com/poiuytrez/SpeechRecognizer.git",
+  "_id": "SpeechRecognizer@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/SpeechRecognizer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/poiuytrez/SpeechRecognizer",
+    "rawSpec": "https://github.com/poiuytrez/SpeechRecognizer",
+    "saveSpec": "git+https://github.com/poiuytrez/SpeechRecognizer.git",
+    "fetchSpec": "https://github.com/poiuytrez/SpeechRecognizer.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/poiuytrez/SpeechRecognizer.git#0c9c2e1cc71f9de3589985aa2dd9fd70f361b0c8",
+  "_spec": "https://github.com/poiuytrez/SpeechRecognizer",
+  "_where": "C:\\CAML\\VisualStudio\\pureCordovaColectoR",
+  "author": {
+    "name": "Guillaume Charhon"
+  },
+  "bugs": {
+    "url": "https://github.com/poiuytrez/SpeechRecognizer"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-speechrecognizer",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Recognizes speech input",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/poiuytrez/SpeechRecognizer#readme",
+  "keywords": [
+    "cordova",
+    "speech",
+    "recognizer",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "SpeechRecognizer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poiuytrez/SpeechRecognizer.git"
+  },
+  "version": "1.0.0"
+}
