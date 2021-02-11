@@ -1,0 +1,59 @@
+{
+  "_from": "cordova-plugin-websql",
+  "_id": "cordova-plugin-websql@0.0.10",
+  "_inBundle": false,
+  "_integrity": "sha1-vsKqiRDgU9/rL8O5+tQINSVBqMA=",
+  "_location": "/cordova-plugin-websql",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-websql",
+    "name": "cordova-plugin-websql",
+    "escapedName": "cordova-plugin-websql",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-websql/-/cordova-plugin-websql-0.0.10.tgz",
+  "_shasum": "bec2aa8910e053dfeb2fc3b9fad408352541a8c0",
+  "_spec": "cordova-plugin-websql",
+  "_where": "C:\\CAML\\VisualStudio\\pureCordovaColectoR",
+  "author": {
+    "name": "Microsoft Open Technologies Inc"
+  },
+  "bugs": {
+    "url": "https://github.com/MSOpenTech/cordova-plugin-websql/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-websql",
+    "platforms": [
+      "wp8",
+      "windows8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Websql Plugin",
+  "homepage": "https://github.com/MSOpenTech/cordova-plugin-websql#readme",
+  "keywords": [
+    "cordova",
+    "websql",
+    "ecosystem:cordova",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-wp8"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-websql",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSOpenTech/cordova-plugin-websql.git"
+  },
+  "version": "0.0.10"
+}
