@@ -2256,10 +2256,10 @@
 
             //end cardinal point
 
-            // console.log("https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + encodeURI(document.getElementById('Latitude').value) + ',' + encodeURI(document.getElementById('Longitude').value) + '&destinations=' + encodeURI(selectedlat) + ',' + encodeURI(selectedlng) + '&mode=driving&language=en&key=AIzaSyDgQNFfUVstkAZokFgKDpuJq76mUdcBABs')
+            // console.log("https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + encodeURI(document.getElementById('Latitude').value) + ',' + encodeURI(document.getElementById('Longitude').value) + '&destinations=' + encodeURI(selectedlat) + ',' + encodeURI(selectedlng) + '&mode=driving&language=en&key=KEY')
 
             var requestDistance = new XMLHttpRequest();
-            requestDistance.open("GET", "https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + encodeURI(document.getElementById('Latitude').value) + ',' + encodeURI(document.getElementById('Longitude').value) + '&destinations=' + encodeURI(selectedlat) + ',' + encodeURI(selectedlng) + '&mode=driving&language=en&key=AIzaSyDgQNFfUVstkAZokFgKDpuJq76mUdcBABs', true);
+            requestDistance.open("GET", "https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + encodeURI(document.getElementById('Latitude').value) + ',' + encodeURI(document.getElementById('Longitude').value) + '&destinations=' + encodeURI(selectedlat) + ',' + encodeURI(selectedlng) + '&mode=driving&language=en&key=KEY', true);
             requestDistance.onreadystatechange = function () {
                 //load response file
                 if (requestDistance.readyState == 4) {
