@@ -1,4 +1,6 @@
 ﻿//Main
+//API keys removed
+
 (function () {
     "use strict";
 
